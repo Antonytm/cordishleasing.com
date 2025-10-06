@@ -1,0 +1,179 @@
+---
+import { SitecoreContextMap } from "@astro-sitecore-jss/astro-sitecore-jss";
+import type { ComponentRendering } from "@sitecore-jss/sitecore-jss/layout";
+
+export interface Props {
+  route?: any;
+  rendering?: ComponentRendering;
+  props?: any;
+}
+
+const { route: routeProp, rendering } = Astro.props;
+const actualRendering = routeProp?.rendering || rendering;
+
+// Get componentProps from the context map
+const contextMap = SitecoreContextMap.get();
+const allComponentProps = contextMap["componentProps"] || {};
+
+// Get this component's props by uid
+const componentProps = actualRendering?.uid
+  ? allComponentProps[actualRendering.uid] || {}
+  : {};
+
+const headerItems = componentProps?.props?.headerItems?.item;
+const navigationItems = componentProps?.props?.navigationItems?.item;
+
+// Get header configuration
+const headerChildren = headerItems?.children?.results || [];
+const siteLogoAriaText =
+  headerChildren.find((child: any) => child.name === "Site Logo Aria Text")
+    ?.field?.value || "Cordish Logo";
+
+// Get navigation items
+const navItems = navigationItems?.children?.results || [];
+const mainNavItems = navItems.filter(
+  (item: any) =>
+    item.IncludeInMainNavigation?.value === "1" ||
+    item.IncludeInMainNavigation?.value === true
+);
+---
+
+<header class="header header-desktop">
+  <nav class="nav-focus">
+    <a href="#content" class="show-on-focus">Skip to main content</a>
+    <a href="#nav" class="show-on-focus">Skip to navigation</a>
+  </nav>
+  <div class="wrap">
+    <a
+      class="logo"
+      title="Homepage"
+      role="img"
+      aria-label={siteLogoAriaText}
+      href="/"></a>
+    <ul id="nav" class="nav-main">
+      {
+        mainNavItems.map((item: any) => (
+          <li>
+            <a href={item.url?.path || "#"}>
+              {item.ShortTitle?.value ||
+                item.LongTitle?.value ||
+                item.displayName}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</header>
+
+<header class="header header-mobile">
+  <div class="header-mobile-int">
+    <div class="wrap">
+      <a
+        class="logo"
+        title="Homepage"
+        role="img"
+        aria-label={siteLogoAriaText}
+        href="/"></a>
+      <a class="toggle"></a>
+    </div>
+  </div>
+  <ul class="nav-mobile">
+    {
+      mainNavItems.map((item: any) => (
+        <li>
+          <a href={item.url?.path || "#"}>
+            {item.ShortTitle?.value ||
+              item.LongTitle?.value ||
+              item.displayName}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</header>
+
+<script is:inline>
+  (function () {
+    function initMobileMenu() {
+      const toggle = document.querySelector(".header-mobile .toggle");
+      const mobileNav = document.querySelector(".nav-mobile");
+
+      if (!toggle || !mobileNav) {
+        return;
+      }
+
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const isVisible = toggle.classList.contains("visible");
+
+        if (isVisible) {
+          // Close menu
+          toggle.classList.remove("visible");
+          mobileNav.classList.add("offscreen");
+
+          // Remove visible class after animation
+          setTimeout(function () {
+            mobileNav.classList.remove("visible");
+            mobileNav.classList.remove("offscreen");
+          }, 300);
+        } else {
+          // Open menu
+          toggle.classList.add("visible");
+          mobileNav.classList.add("visible");
+        }
+      });
+    }
+
+    function initMenuHover() {
+      const navMain = document.querySelector(".nav-main");
+      const overlay = document.querySelector(".overlay");
+
+      if (!navMain) {
+        return;
+      }
+
+      const menuItems = navMain.querySelectorAll("li");
+
+      menuItems.forEach(function (item) {
+        item.addEventListener("mouseenter", function () {
+          // Add fade class to overlay
+          if (overlay) {
+            overlay.classList.add("fade");
+          }
+
+          // Add fade class to all other menu items
+          menuItems.forEach(function (otherItem) {
+            if (otherItem !== item) {
+              otherItem.classList.add("fade");
+            }
+          });
+        });
+
+        item.addEventListener("mouseleave", function () {
+          // Remove fade class from overlay
+          if (overlay) {
+            overlay.classList.remove("fade");
+          }
+
+          // Remove fade class from all menu items
+          menuItems.forEach(function (otherItem) {
+            otherItem.classList.remove("fade");
+          });
+        });
+      });
+    }
+
+    // Initialize when DOM is ready
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", function() {
+        initMobileMenu();
+        initMenuHover();
+      });
+    } else {
+      initMobileMenu();
+      initMenuHover();
+    }
+  })();
+</script>

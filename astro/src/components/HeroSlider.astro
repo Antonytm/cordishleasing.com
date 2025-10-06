@@ -1,0 +1,244 @@
+---
+import { SitecoreContextMap } from "@astro-sitecore-jss/astro-sitecore-jss";
+import type { ComponentRendering, Field, ImageField, LinkField } from "@sitecore-jss/sitecore-jss/layout";
+
+export interface Props {
+  route?: any;
+  rendering?: ComponentRendering;
+  params?: {
+    slideClass?: string;
+  };
+}
+
+const { route: routeProp, rendering, params } = Astro.props;
+const contextMap = SitecoreContextMap.get();
+const scContext = contextMap['scContext'];
+const contextRoute = scContext?.route;
+const actualRendering = routeProp?.rendering || rendering;
+const actualParams = routeProp?.params || params;
+
+// Get Hero Sliders from route fields
+const heroSliders = (contextRoute?.fields?.["Hero Sliders"] as any[]) || [];
+const slideClass = actualParams?.slideClass || '';
+---
+
+<section class="main-slider-container">
+  <div
+    class={`cycle-slideshow main-slider ${slideClass}`}
+    data-cycle-pager=".pager"
+    data-cycle-fx="fadeout"
+    data-cycle-timeout="8000"
+    data-cycle-speed="500"
+    data-cycle-swipe="true"
+    data-cycle-slides="> div:not(.print-only)"
+    data-cycle-prev=".prev-slide"
+    data-cycle-next=".next-slide"
+  >
+    <span class="pager"></span>
+    <span class="prev-slide"></span>
+    <span class="next-slide"></span>
+
+    {heroSliders.map((slide) => {
+      const mainImage = slide.fields?.["Main Image"]?.value as ImageField['value'];
+      const shortTitle = slide.fields?.["Short Title"]?.value;
+      const longTitle = slide.fields?.["Long Title"]?.value;
+      const linkText = slide.fields?.["Link Text"]?.value;
+      const link = slide.fields?.["Link"]?.value as LinkField['value'];
+
+      return (
+        <>
+          <div class="slide">
+            <article>
+              <figure class="landing-feature__background">
+                <picture>
+                  {mainImage?.src && (
+                    <>
+                      <source media="(min-width: 1200px)" srcset={mainImage.src} />
+                      <img
+                        alt={mainImage.alt || ''}
+                        src={mainImage.src}
+                        height={mainImage.height}
+                        width={mainImage.width}
+                      />
+                    </>
+                  )}
+                </picture>
+              </figure>
+            </article>
+            <div class="tint"></div>
+            <div class="slide-content">
+              <div class="wrap" data-scroll-speed="4">
+                <h1 class="title">{longTitle || shortTitle}</h1>
+                {link?.href && linkText && (
+                  <div>
+                    <a title={link.title || ''} class="btn" href={link.href}>
+                      {linkText}
+                    </a>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+          {mainImage?.src && (
+            <img
+              alt={mainImage.alt || ''}
+              width={mainImage.width}
+              height={mainImage.height}
+              class="print-only"
+              src={mainImage.src}
+            />
+          )}
+        </>
+      );
+    })}
+  </div>
+</section>
+
+<script is:inline>
+  (function() {
+  class HeroSlider {
+    constructor(container) {
+      this.container = container;
+      this.slides = Array.from(container.querySelectorAll('.slide'));
+      this.currentIndex = 0;
+      this.timeout = parseInt(container.dataset.cycleTimeout) || 8000;
+      this.speed = parseInt(container.dataset.cycleSpeed) || 500;
+      this.autoplayTimer = null;
+
+      // Get control elements
+      this.pager = container.querySelector('.pager');
+      this.prevBtn = container.querySelector('.prev-slide');
+      this.nextBtn = container.querySelector('.next-slide');
+
+      this.init();
+    }
+
+    init() {
+      if (this.slides.length <= 1) return;
+
+      // Position all slides absolutely except the first
+      this.slides.forEach((slide, index) => {
+        if (index > 0) {
+          slide.style.position = 'absolute';
+          slide.style.top = '0';
+          slide.style.left = '0';
+          slide.style.width = '100%';
+          slide.style.opacity = '0';
+          slide.style.zIndex = '0';
+        }
+        slide.style.transition = `opacity ${this.speed}ms ease-in-out`;
+      });
+
+      // Set first slide as active
+      this.slides[0].style.zIndex = '1';
+      this.slides[0].style.opacity = '1';
+
+      // Create pager dots
+      this.createPager();
+
+      // Setup navigation
+      this.setupNavigation();
+
+      // Start autoplay
+      this.startAutoplay();
+    }
+
+    createPager() {
+      if (!this.pager || this.slides.length <= 1) return;
+
+      this.pager.innerHTML = '';
+      this.slides.forEach((_, index) => {
+        const dot = document.createElement('span');
+        dot.className = index === 0 ? 'cycle-pager-active' : '';
+        dot.addEventListener('click', () => this.goToSlide(index));
+        this.pager.appendChild(dot);
+      });
+    }
+
+    setupNavigation() {
+      if (this.prevBtn) {
+        const prevSpan = document.createElement('span');
+        this.prevBtn.appendChild(prevSpan);
+        this.prevBtn.addEventListener('click', () => {
+          this.stopAutoplay();
+          this.prevSlide();
+          this.startAutoplay();
+        });
+      }
+
+      if (this.nextBtn) {
+        const nextSpan = document.createElement('span');
+        this.nextBtn.appendChild(nextSpan);
+        this.nextBtn.addEventListener('click', () => {
+          this.stopAutoplay();
+          this.nextSlide();
+          this.startAutoplay();
+        });
+      }
+    }
+
+    goToSlide(index) {
+      if (index === this.currentIndex || index < 0 || index >= this.slides.length) return;
+
+      const prevIndex = this.currentIndex;
+      this.currentIndex = index;
+
+      // Fade out current slide
+      this.slides[prevIndex].style.zIndex = '0';
+      this.slides[prevIndex].style.opacity = '0';
+
+      // Fade in new slide
+      this.slides[index].style.zIndex = '1';
+      this.slides[index].style.opacity = '1';
+
+      // Update pager
+      this.updatePager();
+    }
+
+    updatePager() {
+      if (!this.pager) return;
+
+      const dots = this.pager.querySelectorAll('span');
+      dots.forEach((dot, index) => {
+        dot.className = index === this.currentIndex ? 'cycle-pager-active' : '';
+      });
+    }
+
+    nextSlide() {
+      const nextIndex = (this.currentIndex + 1) % this.slides.length;
+      this.goToSlide(nextIndex);
+    }
+
+    prevSlide() {
+      const prevIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+      this.goToSlide(prevIndex);
+    }
+
+    startAutoplay() {
+      this.stopAutoplay();
+      this.autoplayTimer = setInterval(() => this.nextSlide(), this.timeout);
+    }
+
+    stopAutoplay() {
+      if (this.autoplayTimer) {
+        clearInterval(this.autoplayTimer);
+        this.autoplayTimer = null;
+      }
+    }
+  }
+
+  // Initialize slider when DOM is ready
+  function initSlider() {
+    const sliderContainer = document.querySelector('.cycle-slideshow');
+    if (sliderContainer) {
+      new HeroSlider(sliderContainer);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSlider);
+  } else {
+    initSlider();
+  }
+  })();
+</script>

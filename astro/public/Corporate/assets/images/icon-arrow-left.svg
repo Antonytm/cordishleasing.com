@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.02 18" width="29" height="18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+    </style>
+  </defs>
+  <title>icon-arrow-left</title>
+  <path id="Arrow" class="cls-1" d="M9.25,16.65L2.61,9.81h25.6a0.79,0.79,0,0,0,0-1.57H2.54L9.25,1.33a0.8,0.8,0,0,0,0-1.11l0,0a0.75,0.75,0,0,0-1.06,0l-8,8.21a0.8,0.8,0,0,0,0,1.11l8,8.21a0.74,0.74,0,0,0,.54.23,0.75,0.75,0,0,0,.54-0.23A0.8,0.8,0,0,0,9.25,16.65Z" transform="translate(0.03 0.01)"/>
+</svg>

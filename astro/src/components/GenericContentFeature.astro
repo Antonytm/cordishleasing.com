@@ -1,0 +1,36 @@
+---
+import type { ComponentRendering, LinkField } from "@sitecore-jss/sitecore-jss/layout";
+
+export interface Props {
+  route?: any;
+  rendering?: ComponentRendering;
+  fields?: any;
+}
+
+const { route: routeProp, rendering, fields } = Astro.props;
+const actualRendering = routeProp?.rendering || rendering;
+const componentFields = fields || routeProp?.fields || actualRendering?.fields || {};
+
+const shortTitle = componentFields["Short Title"]?.value;
+const longTitle = componentFields["Long Title"]?.value;
+const teaserTitle = componentFields["Teaser Title"]?.value;
+const teaserCopy = componentFields["Teaser Copy"]?.value;
+const linkText = componentFields["Link Text"]?.value;
+const link = componentFields["Link"]?.value as LinkField['value'];
+---
+
+<section class="callout generic-callout">
+  <div class="fade">
+    <div class="wrap">
+      <div class="callout-content">
+        {(longTitle || shortTitle) && <h2 class="hdr">{longTitle || shortTitle}</h2>}
+        {teaserCopy && <div><div set:html={teaserCopy} /></div>}
+        {link?.href && linkText && (
+          <a title={link.title || 'Contact Us'} target={link.target || ''} class="btn" href={link.href}>
+            {linkText}
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</section>

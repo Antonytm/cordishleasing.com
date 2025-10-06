@@ -1,0 +1,1495 @@
+{
+    "props": {
+      "pageProps": {
+        "site": {
+          "name": "leasing",
+          "hostName": "cordishleasing.com|www.cordishleasing.com|leasing.prod.cordish.agencyq.site|leasing-preview.prod.cordish.agencyq.site",
+          "language": "en"
+        },
+        "locale": "en",
+        "layoutData": {
+          "sitecore": {
+            "context": {
+              "pageEditing": false,
+              "site": {
+                "name": "leasing",
+                "targetHostName": "https://www.cordishleasing.com",
+                "path": "/sitecore/content/Corporate/Leasing"
+              },
+              "pageState": "normal",
+              "language": "en",
+              "itemPath": "/",
+              "ancestorIds": [
+                "590b0e1677414b3488b45856d1720cdc",
+                "32bbebff40fc44dfa9f4b17dedb8d5cc"
+              ]
+            },
+            "route": {
+              "name": "Home",
+              "displayName": "Home",
+              "fields": {
+                "Include in Utility Navigation": {
+                  "value": false
+                },
+                "HTML Keywords": {
+                  "value": ""
+                },
+                "Include in Main Navigation": {
+                  "value": true
+                },
+                "HTML Title Description": {
+                  "value": ""
+                },
+                "Include in Sitemap": {
+                  "value": true
+                },
+                "HTML Title Override": {
+                  "value": ""
+                },
+                "Social Share Image": {
+                  "value": {
+                    "src": "https://edge.sitecorecloud.io/cordishc-4m5nplkf/media/Cordish/Images/Placeholder-Images/logo_graybackground_default_news.jpg?h=340&iar=0&w=750&rev=afcda56a49874a9abea516242b1375a4",
+                    "alt": "The Cordish Company Logo",
+                    "width": "750",
+                    "height": "340"
+                  }
+                },
+                "Navigation Title": {
+                  "value": ""
+                },
+                "Utility Nav Order": {
+                  "value": null
+                },
+                "Main Nav Order": {
+                  "value": ""
+                },
+                "Main Image Caption": {
+                  "value": ""
+                },
+                "Main Image": {
+                  "value": {}
+                },
+                "Hero Sliders": [
+                  {
+                    "id": "1f9fd4b2-b718-444f-b7a0-c763b9310479",
+                    "url": "/Hero-Slides/Slide-1",
+                    "name": "Slide 1",
+                    "displayName": "Slide 1",
+                    "fields": {
+                      "Slide Video Link Text": {
+                        "value": "Watch the Video"
+                      },
+                      "Slide Logo": {
+                        "value": {}
+                      },
+                      "Slide Video ID": {
+                        "value": ""
+                      },
+                      "Link 2": {
+                        "value": {
+                          "href": ""
+                        }
+                      },
+                      "Link Text 2": {
+                        "value": ""
+                      },
+                      "Link Text": {
+                        "value": "View Mixed-Use Districts"
+                      },
+                      "Link": {
+                        "value": {
+                          "id": "{2A80E63A-AF5B-4D79-B965-B716EEB07761}",
+                          "querystring": "",
+                          "text": "",
+                          "title": "",
+                          "class": "",
+                          "url": "/Leasing/Home/Mixed Use Districts",
+                          "linktype": "internal",
+                          "href": "/Mixed-Use-Districts"
+                        }
+                      },
+                      "Main Image Caption": {
+                        "value": ""
+                      },
+                      "Main Image": {
+                        "value": {
+                          "src": "https://edge.sitecorecloud.io/cordishc-4m5nplkf/media/Cordish/Images/Corporate-Mixed-Use-Districts/PowerLightDistrict/PLD_ExteriorPano_Master_1920x1080.jpg?h=1080&iar=0&w=1920&rev=5804d9509ae44888b6ea056eafc400ae",
+                          "alt": "Kansas City Power and Light District at Night",
+                          "width": "1920",
+                          "height": "1080"
+                        }
+                      },
+                      "Teaser Copy": {
+                        "value": "<p>The Cordish Companies is one of the largest developers of mixed-use districts and shopping centers in the world, with a portfolio totaling billions of square feet.</p>"
+                      },
+                      "Teaser Title": {
+                        "value": ""
+                      },
+                      "Long Title": {
+                        "value": "PREMIER MIXED-USE ENTERTAINMENT DISTRICTS"
+                      },
+                      "Short Title": {
+                        "value": "PREMIER MIXED-USE ENTERTAINMENT DISTRICTS"
+                      },
+                      "Middle Size Image": {
+                        "value": {}
+                      },
+                      "Small Size Image": {
+                        "value": {}
+                      }
+                    }
+                  },
+                  {
+                    "id": "c00fc59a-8b92-46b1-a0cb-61e263a69fe1",
+                    "url": "/Hero-Slides/Slide-2",
+                    "name": "Slide 2",
+                    "displayName": "Slide 2",
+                    "fields": {
+                      "Slide Video Link Text": {
+                        "value": "Watch the Video"
+                      },
+                      "Slide Logo": {
+                        "value": {}
+                      },
+                      "Slide Video ID": {
+                        "value": ""
+                      },
+                      "Link 2": {
+                        "value": {
+                          "href": ""
+                        }
+                      },
+                      "Link Text 2": {
+                        "value": ""
+                      },
+                      "Link Text": {
+                        "value": "View Mixed-Use Districts"
+                      },
+                      "Link": {
+                        "value": {
+                          "id": "{2A80E63A-AF5B-4D79-B965-B716EEB07761}",
+                          "querystring": "",
+                          "text": "",
+                          "title": "",
+                          "class": "",
+                          "url": "/Leasing/Home/Mixed Use Districts",
+                          "linktype": "internal",
+                          "href": "/Mixed-Use-Districts"
+                        }
+                      },
+                      "Main Image Caption": {
+                        "value": ""
+                      },
+                      "Main Image": {
+                        "value": {
+                          "src": "https://edge.sitecorecloud.io/cordishc-4m5nplkf/media/Cordish/Images/Corporate-Mixed-Use-Districts/PowerLightDistrict/PLD_KCLive_WorldCup_Crowd_1920x1080.jpg?h=1080&iar=0&w=1920&rev=47963a3ce3984942977e021358fb63ac",
+                          "alt": "World Cup fans in Kansas City Power and Light District",
+                          "width": "1920",
+                          "height": "1080"
+                        }
+                      },
+                      "Teaser Copy": {
+                        "value": "<p>The Cordish Companies is one of the largest developers of mixed-use districts and shopping centers in the world, with a portfolio totaling billions of square feet.</p>"
+                      },
+                      "Teaser Title": {
+                        "value": ""
+                      },
+                      "Long Title": {
+                        "value": "WELCOMING 55 MILLION VISITORS ANNUALLY"
+                      },
+                      "Short Title": {
+                        "value": "WELCOMING 55 MILLION VISITORS ANNUALLY"
+                      },
+                      "Middle Size Image": {
+                        "value": {}
+                      },
+                      "Small Size Image": {
+                        "value": {}
+                      }
+                    }
+                  },
+                  {
+                    "id": "f3b76151-cd80-4b25-954f-b735d542e0d5",
+                    "url": "/Hero-Slides/Slide-3",
+                    "name": "Slide 3",
+                    "displayName": "Slide 3",
+                    "fields": {
+                      "Slide Video Link Text": {
+                        "value": "Watch the Video"
+                      },
+                      "Slide Logo": {
+                        "value": {}
+                      },
+                      "Slide Video ID": {
+                        "value": ""
+                      },
+                      "Link 2": {
+                        "value": {
+                          "href": ""
+                        }
+                      },
+                      "Link Text 2": {
+                        "value": ""
+                      },
+                      "Link Text": {
+                        "value": "View Mixed-Use Districts"
+                      },
+                      "Link": {
+                        "value": {
+                          "id": "{2A80E63A-AF5B-4D79-B965-B716EEB07761}",
+                          "querystring": "",
+                          "text": "",
+                          "title": "",
+                          "class": "",
+                          "url": "/Leasing/Home/Mixed Use Districts",
+                          "linktype": "internal",
+                          "href": "/Mixed-Use-Districts"
+                        }
+                      },
+                      "Main Image Caption": {
+                        "value": ""
+                      },
+                      "Main Image": {
+                        "value": {
+                          "src": "https://edge.sitecorecloud.io/cordishc-4m5nplkf/media/Cordish/Images/Corporate-Mixed-Use-Districts/BallparkVillage/BPV_BuschII_1920x1080.jpg?h=1080&iar=0&w=1920&rev=a4e13efe03e64fc39091759e54c5007a",
+                          "alt": "Aerial View to Ballpark Village and Busch II Infield",
+                          "width": "1920",
+                          "height": "1080"
+                        }
+                      },
+                      "Teaser Copy": {
+                        "value": "<p>The Cordish Companies is one of the largest developers of mixed-use districts and shopping centers in the world, with a portfolio totaling billions of square feet.</p>"
+                      },
+                      "Teaser Title": {
+                        "value": ""
+                      },
+                      "Long Title": {
+                        "value": "HOME TO THE COUNTRY’S TOP BRANDS & VENUES"
+                      },
+                      "Short Title": {
+                        "value": "HOME TO THE COUNTRY’S TOP BRANDS & VENUES"
+                      },
+                      "Middle Size Image": {
+                        "value": {}
+                      },
+                      "Small Size Image": {
+                        "value": {}
+                      }
+                    }
+                  }
+                ],
+                "Brand Story CTA": {
+                  "id": "98f9385c-458c-484d-b63a-5754cbf32c98",
+                  "url": "/Auxiliary-Content/Home/Homepage-Brand-Story/Cordish-Leasing-Story",
+                  "name": "Cordish Leasing Story",
+                  "displayName": "Cordish Leasing Story",
+                  "fields": {
+                    "Video": {
+                      "value": "AjhQXSB-xBQ"
+                    },
+                    "Link Text": {
+                      "value": "Learn About Live!"
+                    },
+                    "Link": {
+                      "value": {
+                        "text": "",
+                        "anchor": "",
+                        "linktype": "internal",
+                        "class": "",
+                        "title": "",
+                        "querystring": "",
+                        "id": "{E8DCB8FA-D3CA-443E-86B0-1F898DC16883}",
+                        "href": "http://www.cordish.com/LIVE"
+                      }
+                    },
+                    "Main Image Caption": {
+                      "value": "Watch Our Story"
+                    },
+                    "Main Image": {
+                      "value": {
+                        "src": "https://edge.sitecorecloud.io/cordishc-4m5nplkf/media/Cordish/Images/Corporate-Mixed-Use-Districts/PowerLightDistrict/PLD_KCLive_Concert_1500x550.jpg?h=550&iar=0&w=1500&rev=1a50f4ba342843028659cf12081dde46",
+                        "alt": "PLD_KCLive_Concert_1500x550",
+                        "width": "1500",
+                        "height": "550"
+                      }
+                    },
+                    "Teaser Copy": {
+                      "value": "<p>Live! began with The Cordish Companies' branded entertainment districts, which set a new standard for design and best-in-class customer experiences. Projects such as Texas Live!, XFINITY Live!, Kansas City Live! and Fox Sports Midwest Live! are among the highest profile sports and entertainment destinations in the country. Live! has now grown to encompass branded casinos and hotels, all delivering our unique blend of excitement, customer service, and best-in-class design and amenities.</p>\n<p>&nbsp;</p>"
+                    },
+                    "Teaser Title": {
+                      "value": ""
+                    },
+                    "Long Title": {
+                      "value": "The Live! Brand"
+                    },
+                    "Short Title": {
+                      "value": "The Live! Brand"
+                    },
+                    "Middle Size Image": {
+                      "value": {}
+                    },
+                    "Small Size Image": {
+                      "value": {}
+                    }
+                  }
+                },
+                "Long Title": {
+                  "value": "The Cordish Companies - Leasing Homepage"
+                },
+                "Short Title": {
+                  "value": "Leasing Homepage"
+                },
+                "Teaser Copy": {
+                  "value": ""
+                },
+                "Teaser Title": {
+                  "value": ""
+                },
+                "Teaser Image": {
+                  "value": {}
+                },
+                "Body Copy": {
+                  "value": ""
+                },
+                "Former Site URL 5": {
+                  "value": ""
+                },
+                "Former Site URL 2": {
+                  "value": ""
+                },
+                "Former Site URL 3": {
+                  "value": ""
+                },
+                "Former Site URL 4": {
+                  "value": ""
+                },
+                "Former Site URL 1": {
+                  "value": ""
+                },
+                "Include in List Pages": {
+                  "value": true
+                },
+                "Include in Left Navigation": {
+                  "value": true
+                },
+                "Middle Size Image": {
+                  "value": {}
+                },
+                "Small Size Image": {
+                  "value": {}
+                },
+                "Page Design": null
+              },
+              "databaseName": "master",
+              "deviceId": "fe5d7fdf-89c0-4d99-9aa3-b5fbd009c9f3",
+              "itemId": "59fec848-09e9-4bf6-a975-095d1ad9ec90",
+              "itemLanguage": "en",
+              "itemVersion": 2,
+              "layoutId": "d4d22756-80de-4f4c-8bb8-2609ab329fb6",
+              "templateId": "6a705c85-c726-45df-93a7-d9f71e0ba488",
+              "templateName": "Leasing Homepage",
+              "placeholders": {
+                "Main": [
+                  {
+                    "uid": "45f8f7b9-50e9-40dc-98d1-846ce7c2ed74",
+                    "componentName": "HeroSlider",
+                    "dataSource": "",
+                    "params": {
+                      "slideClass": "landing"
+                    },
+                    "placeholders": {
+                      "Hero Slideshow CTA": []
+                    }
+                  },
+                  {
+                    "uid": "f2abee45-f446-4be6-a840-567004910eea",
+                    "componentName": "BrandStory",
+                    "dataSource": ""
+                  },
+                  {
+                    "uid": "51e78010-101e-4b45-8778-85e67d71d76b",
+                    "componentName": "GenericContentFeature",
+                    "dataSource": "{1B47F0BD-0FFD-4923-8A0F-155ED3E78009}",
+                    "fields": {
+                      "Link Text": {
+                        "value": "Contact Us"
+                      },
+                      "Link": {
+                        "value": {
+                          "text": "Contact Us",
+                          "anchor": "",
+                          "linktype": "internal",
+                          "class": "",
+                          "title": "Contact Us",
+                          "target": "",
+                          "querystring": "",
+                          "id": "{7547434E-93AF-417D-BACD-C29D54C7A080}",
+                          "href": "/Contact-Us"
+                        }
+                      },
+                      "Main Image Caption": {
+                        "value": ""
+                      },
+                      "Main Image": {
+                        "value": {}
+                      },
+                      "Teaser Copy": {
+                        "value": "<p>If interested in learning more about Cordish properties, please contact our leasing team.</p>"
+                      },
+                      "Teaser Title": {
+                        "value": ""
+                      },
+                      "Long Title": {
+                        "value": "Leasing Information"
+                      },
+                      "Short Title": {
+                        "value": "Leasing Information"
+                      },
+                      "Middle Size Image": {
+                        "value": {}
+                      },
+                      "Small Size Image": {
+                        "value": {}
+                      }
+                    }
+                  }
+                ],
+                "Login Form": [],
+                "First": [],
+                "Header": [
+                  {
+                    "uid": "dbd3040f-a33f-478b-81ef-a0157608fede",
+                    "componentName": "Header",
+                    "dataSource": "",
+                    "placeholders": {
+                      "Header Queue Module": []
+                    }
+                  }
+                ],
+                "Footer": [
+                  {
+                    "uid": "ed77b3c6-5c5d-44e0-b967-68666619ca78",
+                    "componentName": "Footer",
+                    "dataSource": "",
+                    "placeholders": {
+                      "Footer CTA": []
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "dictionary": {
+          "RoomsAndAmenities.CallForAvailability": "Call For Availability",
+          "Restaurant.Closed": "Closed",
+          "PrimaryNavigation": "Primary Navigation",
+          "ReturnToPrevious": "Return to Previous Navigation Menu",
+          "SeeMoreAbout": "See More About",
+          "MobileNavigation": "Mobile Navigation",
+          "OpenImageGalleryLightbox": "Open Image Gallery Lightbox",
+          "BenefitTierNavigation": "Benefit Tier Navigation",
+          "ToggleSearch": "Toggle Search",
+          "OpenGlobalBookingTool": "Open Global Booking Tool",
+          "SkipToMainContent": "Skip to Main Content",
+          "Generic.Expand": "Expand",
+          "ViewFullTestimonials": "View Full Testimonials",
+          "LoadMoreTestimonials": "Load More Testimonials",
+          "News.LoadMoreNews": "Load More News",
+          "News.FeaturedNews": "Featured News",
+          "Generic.PreviousPage": "Previous Page",
+          "Generic.NextPage": "Next Page",
+          "Generic.CurrentPage": "Current Page",
+          "Generic.Page": "Page",
+          "Generic.ViewNextItem": "View Next Item",
+          "Generic.ViewPreviousItem": "View Previous Item",
+          "Generic.All": "All",
+          "Events.ViewPackages": "View Packages",
+          "Events.LoadMoreEvents": "Load More Events",
+          "SiteSearch.LoadingResults": "Loading Results...",
+          "SiteSearch.BackToTop": "Back To Top",
+          "SiteSearch.Promotions": "Promotions",
+          "SiteSearch.DiningOptions": "Dining Options",
+          "SiteSearch.Events": "Events",
+          "SiteSearch.ViewAllResults": "View All Results",
+          "Restaurant.BarAndLounges": "Bar & Lounges Only",
+          "Restaurant.Only": "Restaurants Only",
+          "Restaurant.ViewAll": "View All Dine & Drink",
+          "Generic.Next": "Next",
+          "Generic.Previous": "Previous",
+          "Generic.CloseModal": "Close Modal",
+          "Generic.Close": "Close",
+          "BookNow.Guests": "Guests",
+          "BookNow.CheckOut": "Check Out",
+          "BookNow.CheckIn": "Check In",
+          "Events.LoadingEvents": "Loading Events...",
+          "Events.BackToTop": "Back to Top",
+          "Events.ClearAllFilters": "Clear All Filters",
+          "Events.ViewResults": "View Results",
+          "Events.ThisWeek": "This Week",
+          "Events.ThisWeekend": "This Weekend",
+          "Events.Today": "Today",
+          "Events.EndDate": "End Date",
+          "Events.StartDate": "Start Date",
+          "Events.Type": "Event Type",
+          "Events.DateRange": "Date Range",
+          "Events.EventTypes": "Event Types",
+          "Events.SearchArtist": "Search by Artist or Event",
+          "Events.ViewFilters": "View Filters",
+          "Events.ViewAllPackages": "View All Packages",
+          "Events.EventInfo": "Event Info",
+          "Events.Featured": "Featured Event",
+          "Pittsburgh.Long": "Live! Casino Hotel Pittsburgh",
+          "Pittsburgh.Short": "Pittsburgh",
+          "Philadelphia.Long": "Live! Casino Hotel Philadelphia",
+          "Philadelphia.Short": "Philadelphia",
+          "Maryland.Long": "Live! Casino Hotel Maryland",
+          "Maryland.Short": "Maryland",
+          "RoomsAndAmenities.BookNow": "Book Now",
+          "RoomsAndAmenities.CloseModal": "Close Modal",
+          "RoomsAndAmenities.SeeInsideThisSuite": "See Inside This Suite",
+          "RoomsAndAmenities.Prev": "Prev",
+          "RoomsAndAmenities.Next": "Next",
+          "Rooms.BookThisRoom": "BOOK YOUR ROOM",
+          "Testimonials.NoResults": "We're sorry, but there aren't any testimonials with that keyword. You can try entering a different keyword or to see all testimonials, just click &ldquo;Clear Keyword&rdquo;",
+          "Testimonials.ClearKeywords": "Clear Keywords",
+          "News.ViewFilters": "View Filters",
+          "News.SearchByKeyword": "Search by keyword",
+          "News.NewsType": "News Type",
+          "News.ChooseType": " Choose News Type",
+          "News.DateRange": "Date Range",
+          "News.StartDate": "Start Date",
+          "News.EndDate": "End Date",
+          "News.ViewResults": "View Results",
+          "News.BackToTop": "Back to Top",
+          "News.Loading": "Loading News...",
+          "News.ClearAllFilters": "Clear All Filters",
+          "News.NoResults": "We're sorry, but there aren't any news items that meet your criteria. You can try entering a different keyword or using fewer filters. To see news items, click &ldquo;Clear All Filters&rdquo;",
+          "Feature.News.NextArticle.Label": "Next Article",
+          "Feature.News.PageTitleAndSubtitle.Released": "RELEASED",
+          "Testimonials.SearchByKeyword": "Search by keyword",
+          "Testimonials.Loading": "Loading Testimonials...",
+          "Testimonials.BackToTop": "Back to Top",
+          "GeneralList.ViewMoreOf": "View more of ",
+          "Feature.Events.EventFiltersAndResults.NoResults": "We're sorry, but there aren't any events that meet your criteria. You can try entering a different keyword or using fewer filters. To see all upcoming events, just click &ldquo;Clear All Filters&rdquo; ",
+          "Feature.SiteSearch.TypeAhead.PopularSiteDestinations": "Popular Site Destinations",
+          "Feature.Events.EventHero.SoldOut": "Sold Out",
+          "RestaurantsList.RestaurantAndBarLabel": "Restaurant & Bar",
+          "Benefits.ViewAll": "View All",
+          "Benefits.Hide": "Hide",
+          "Benefits.Benefits": "Benefits",
+          "Restaurant.OpenToday": "Opens: {time}",
+          "Restaurant.OpenDateTime": "Opens: {time}",
+          "Event.TicketsFrom": "Tickets from",
+          "Event.Genre": "Genre:",
+          "Event.Showtime": "Showtime:",
+          "Event.Doors": "Doors:",
+          "Event.Location": "Location:",
+          "Restaurant.OpenTomorrow": "Opens: {time} Tomorrow",
+          "Restaurant.Open": "Open"
+        },
+        "headLinks": [],
+        "componentProps": {
+          "ed77b3c6-5c5d-44e0-b967-68666619ca78": {
+            "item": {
+              "children": {
+                "utilityLinks": [
+                  {
+                    "id": "D8EB6B456C234400A8BC0A9380218BD4",
+                    "name": "Corporate",
+                    "field": {
+                      "value": "<link id=\"{C90948DF-7CEB-45F6-8DC3-48EC2B4AD8EE}\" querystring=\"\" text=\"\" title=\"\" class=\"\" url=\"/Cordish/Corporate/Home\" linktype=\"internal\" />",
+                      "url": "/en/",
+                      "targetItem": {
+                        "url": {
+                          "path": "/"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "id": "266904E5F5BA489F8324606909B99F03",
+                    "name": "Terms of Use",
+                    "field": {
+                      "value": "<link text=\"\" linktype=\"internal\" class=\"\" title=\"\"  querystring=\"\" id=\"{C9ED568F-A7AE-4072-9687-A367F6E755E3}\" />",
+                      "url": "/en/Terms-of-Use",
+                      "targetItem": {
+                        "url": {
+                          "path": "/Terms-of-Use"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "contactInfo": [
+                  {
+                    "id": "9B191C5ECD92419CB78D4EE3C3F9D203",
+                    "name": "Address",
+                    "field": {
+                      "value": "601 East Pratt St., 6th Floor"
+                    }
+                  },
+                  {
+                    "id": "1B3BBAF53241422C8B83437360F2FB2D",
+                    "name": "Address 2",
+                    "field": {
+                      "value": "Baltimore, MD 21202"
+                    }
+                  },
+                  {
+                    "id": "15FD1ECD9351488B8AE39E43FF015B5A",
+                    "name": "Email",
+                    "field": {
+                      "value": "leasing@cordish.com"
+                    }
+                  },
+                  {
+                    "id": "B3A111A9310444F3A1EA9C0C993B682A",
+                    "name": "Phone Number",
+                    "field": {
+                      "value": "410.752.5444"
+                    }
+                  },
+                  {
+                    "id": "4AFFFFC418BC4098AA3B3B3B35FCB69F",
+                    "name": "Toll Free Phone Number",
+                    "field": {
+                      "value": "800.733.5444"
+                    }
+                  }
+                ],
+                "socialMediaLinks": [
+                  {
+                    "id": "D07BCD6CDC184F8C85605478E8605827",
+                    "name": "Google Plus Link",
+                    "field": {
+                      "value": "<link linktype=\"external\" url=\"https://plus.google.com/b/104024767916464334255/+Cordish/posts\" />",
+                      "url": "https://plus.google.com/b/104024767916464334255/+Cordish/posts",
+                      "targetItem": null
+                    }
+                  },
+                  {
+                    "id": "F56B70E1A5E742FA9CE54EB5632F4C20",
+                    "name": "LinkedIn Link",
+                    "field": {
+                      "value": "<link linktype=\"external\" url=\"https://www.linkedin.com/company/the-cordish-company\" />",
+                      "url": "https://www.linkedin.com/company/the-cordish-company",
+                      "targetItem": null
+                    }
+                  },
+                  {
+                    "id": "FA3ECBDB29C04442BAC4DB2D6371D1C4",
+                    "name": "Twitter Link",
+                    "field": {
+                      "value": "<link linktype=\"external\" url=\"https://twitter.com/cordishco\" />",
+                      "url": "https://twitter.com/cordishco",
+                      "targetItem": null
+                    }
+                  },
+                  {
+                    "id": "B15234B5169C436681A13A097DB722D5",
+                    "name": "Youtube Link",
+                    "field": {
+                      "value": "<link linktype=\"external\" url=\"https://www.youtube.com/c/cordish\" />",
+                      "url": "https://www.youtube.com/c/cordish",
+                      "targetItem": null
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "dbd3040f-a33f-478b-81ef-a0157608fede": {
+            "props": {
+              "headerItems": {
+                "item": {
+                  "id": "62C7B52AE7FC4F5F8D9272D1435CB50D",
+                  "path": "/sitecore/content/Corporate/Leasing/Home/Site Settings/Header",
+                  "url": {
+                    "path": "/Site-Settings/Header",
+                    "url": "https://www.cordishleasing.com/en/Site-Settings/Header"
+                  },
+                  "children": {
+                    "results": [
+                      {
+                        "id": "D3B3650964624398A2B32345B91985CE",
+                        "name": "Downloads Page",
+                        "headerLogo": null,
+                        "field": {
+                          "value": "<link id=\"{3CAD2BCC-C844-4A3A-AF29-1CEBB96DCD90}\" querystring=\"\" text=\"\" title=\"\" class=\"\" url=\"/Cordish/Leasing/Home/Downloads\" linktype=\"internal\" />"
+                        }
+                      },
+                      {
+                        "id": "3C06050F7F124534939A7413AD69ACD4",
+                        "name": "Site Logo Aria Text",
+                        "headerLogo": null,
+                        "field": {
+                          "value": "Cordish Logo"
+                        }
+                      },
+                      {
+                        "id": "D9D19B45FBAF415D9C12C6BFBC84E504",
+                        "name": "Site Name",
+                        "headerLogo": null,
+                        "field": {
+                          "value": "Cordish Corporate"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "favicon": {
+                "item": null
+              },
+              "navigationItems": {
+                "item": {
+                  "id": "59FEC84809E94BF6A975095D1AD9EC90",
+                  "url": {
+                    "path": "/"
+                  },
+                  "path": "/sitecore/content/Corporate/Leasing/Home",
+                  "children": {
+                    "results": [
+                      {
+                        "id": "E2962464D6C347C590D4780BC7BF521F",
+                        "path": "/sitecore/content/Corporate/Leasing/Home/PDF Redirects",
+                        "name": "PDF Redirects",
+                        "displayName": "PDF Redirects",
+                        "url": {
+                          "path": "/PDF-Redirects"
+                        },
+                        "IncludeInMainNavigation": null,
+                        "IncludeInLeftNavigation": null,
+                        "ShortTitle": null,
+                        "LongTitle": null,
+                        "children": {
+                          "results": []
+                        }
+                      },
+                      {
+                        "id": "0B265355A855487197E3413EC97B575D",
+                        "path": "/sitecore/content/Corporate/Leasing/Home/Hero Slides",
+                        "name": "Hero Slides",
+                        "displayName": "Hero Slides",
+                        "url": {
+                          "path": "/Hero-Slides"
+                        },
+                        "IncludeInMainNavigation": null,
+                        "IncludeInLeftNavigation": null,
+                        "ShortTitle": null,
+                        "LongTitle": null,
+                        "children": {
+                          "results": []
+                        }
+                      },
+                      {
+                        "id": "125E904540CE468CBDF513D6AD2DE2EF",
+                        "path": "/sitecore/content/Corporate/Leasing/Home/About Us",
+                        "name": "About Us",
+                        "displayName": "About Us",
+                        "url": {
+                          "path": "/About-Us"
+                        },
+                        "IncludeInMainNavigation": {
+                          "value": "1"
+                        },
+                        "IncludeInLeftNavigation": null,
+                        "ShortTitle": {
+                          "value": "About"
+                        },
+                        "LongTitle": {
+                          "value": "About"
+                        },
+                        "children": {
+                          "results": []
+                        }
+                      },
+                      {
+                        "id": "916F18A2F67F45F8910C159F70BC9042",
+                        "path": "/sitecore/content/Corporate/Leasing/Home/Sitemap",
+                        "name": "Sitemap",
+                        "displayName": "Sitemap",
+                        "url": {
+                          "path": "/Sitemap"
+                        },
+                        "IncludeInMainNavigation": {
+                          "value": ""
+                        },
+                        "IncludeInLeftNavigation": null,
+                        "ShortTitle": {
+                          "value": "Sitemap"
+                        },
+                        "LongTitle": {
+                          "value": "Sitemap"
+                        },
+                        "children": {
+                          "results": []
+                        }
+                      },
+                      {
+                        "id": "C9ED568FA7AE40729687A367F6E755E3",
+                        "path": "/sitecore/content/Corporate/Leasing/Home/Terms of Use",
+                        "name": "Terms of Use",
+                        "displayName": "Terms of Use",
+                        "url": {
+                          "path": "/Terms-of-Use"
+                        },
+                        "IncludeInMainNavigation": {
+                          "value": ""
+                        },
+                        "IncludeInLeftNavigation": null,
+                        "ShortTitle": {
+                          "value": "Terms of Use"
+                        },
+                        "LongTitle": {
+                          "value": "Terms of Use"
+                        },
+                        "children": {
+                          "results": []
+                        }
+                      },
+                      {
+                        "id": "72F91FDDF9A943F1BDFBBA1F821C1397",
+                        "path": "/sitecore/content/Corporate/Leasing/Home/About",
+                        "name": "About",
+                        "displayName": "About",
+                        "url": {
+                          "path": "/About"
+                        },
+                        "IncludeInMainNavigation": {
+                          "value": ""
+                        },
+                        "IncludeInLeftNavigation": null,
+                        "ShortTitle": {
+                          "value": "About"
+                        },
+                        "LongTitle": {
+                          "value": "About"
+                        },
+                        "children": {
+                          "results": [
+                            {
+                              "id": "6DB9732A361045DFB3CCECFBB1270F8F",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/About/Our Team",
+                              "name": "Our Team",
+                              "displayName": "Our Team",
+                              "url": {
+                                "path": "/About/Our-Team"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Our Team"
+                              },
+                              "LongTitle": {
+                                "value": "Our Team"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "2A80E63AAF5B4D79B965B716EEB07761",
+                        "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts",
+                        "name": "Mixed Use Districts",
+                        "displayName": "Mixed Use Districts",
+                        "url": {
+                          "path": "/Mixed-Use-Districts"
+                        },
+                        "IncludeInMainNavigation": {
+                          "value": "1"
+                        },
+                        "IncludeInLeftNavigation": null,
+                        "ShortTitle": {
+                          "value": "Mixed-Use Districts"
+                        },
+                        "LongTitle": {
+                          "value": "Mixed-Use Districts"
+                        },
+                        "children": {
+                          "results": [
+                            {
+                              "id": "4E66FE9E89F64DA28D63CFF62CE0FA81",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Ballpark Village",
+                              "name": "Ballpark Village",
+                              "displayName": "Ballpark Village",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Ballpark-Village"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Ballpark Village"
+                              },
+                              "LongTitle": {
+                                "value": "Ballpark Village"
+                              }
+                            },
+                            {
+                              "id": "F71E77A7E4534EF5A70D2523F7D8DF4F",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Jacksonville Shipyards",
+                              "name": "Jacksonville Shipyards",
+                              "displayName": "Jacksonville Shipyards",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Jacksonville-Shipyards"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Jacksonville Shipyards"
+                              },
+                              "LongTitle": {
+                                "value": "Jacksonville Shipyards"
+                              }
+                            },
+                            {
+                              "id": "D2C040CCF11C4C4BBB7F8DF122AA1A7C",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/The Pomp",
+                              "name": "The Pomp",
+                              "displayName": "The Pomp",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/The-Pomp"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "The Pomp"
+                              },
+                              "LongTitle": {
+                                "value": "The Pomp"
+                              }
+                            },
+                            {
+                              "id": "126F6E2734BE47AE9AC338A6113B4033",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Bayou Place",
+                              "name": "Bayou Place",
+                              "displayName": "Bayou Place",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Bayou-Place"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Bayou Place"
+                              },
+                              "LongTitle": {
+                                "value": "Bayou Place"
+                              }
+                            },
+                            {
+                              "id": "A409D15875DC403F83B91D1190A6F27D",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Bayou Place Offices",
+                              "name": "Bayou Place Offices",
+                              "displayName": "Bayou Place Offices",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Bayou-Place-Offices"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Bayou Place Offices"
+                              },
+                              "LongTitle": {
+                                "value": "Bayou Place Offices"
+                              }
+                            },
+                            {
+                              "id": "F4A62F11680347F8A1E377CA4CA194D4",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Fourth Street Live",
+                              "name": "Fourth Street Live",
+                              "displayName": "Fourth Street Live",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Fourth-Street-Live"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Fourth Street Live!"
+                              },
+                              "LongTitle": {
+                                "value": "Fourth Street Live!"
+                              }
+                            },
+                            {
+                              "id": "BE1C59E7CE754C1F85E62BA9B709F686",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Kansas City Live",
+                              "name": "Kansas City Live",
+                              "displayName": "Kansas City Live",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Kansas-City-Live"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Kansas City Live!"
+                              },
+                              "LongTitle": {
+                                "value": "Kansas City Live!"
+                              }
+                            },
+                            {
+                              "id": "D951152A3D594DDAB339B187CC7F69E7",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Live Casino Hotel Maryland",
+                              "name": "Live Casino Hotel Maryland",
+                              "displayName": "Live Casino Hotel Maryland",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Live-Casino-Hotel-Maryland"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Live! Casino & Hotel Maryland"
+                              },
+                              "LongTitle": {
+                                "value": "Live! Casino & Hotel Maryland"
+                              }
+                            },
+                            {
+                              "id": "C1C064C1B6FA477D942E236B0BC5675B",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Power and Light District",
+                              "name": "Power and Light District",
+                              "displayName": "Power and Light District",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Power-and-Light-District"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Power and Light District"
+                              },
+                              "LongTitle": {
+                                "value": "Power and Light District"
+                              }
+                            },
+                            {
+                              "id": "5E05200DF5F8491EB5035938344C8042",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Power Plant and Pier IV",
+                              "name": "Power Plant and Pier IV",
+                              "displayName": "Power Plant and Pier IV",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Power-Plant-and-Pier-IV"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Power Plant and Pier IV"
+                              },
+                              "LongTitle": {
+                                "value": "Power Plant and Pier IV"
+                              }
+                            },
+                            {
+                              "id": "565CF2F1308A4B17B0B9E77DED143FB1",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Power Plant Live",
+                              "name": "Power Plant Live",
+                              "displayName": "Power Plant Live",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Power-Plant-Live"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Power Plant Live!"
+                              },
+                              "LongTitle": {
+                                "value": "Power Plant Live!"
+                              }
+                            },
+                            {
+                              "id": "C5086F71D66043EDA58459A20158C4CF",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Mixed Use Districts/Waterside District",
+                              "name": "Waterside District",
+                              "displayName": "Waterside District",
+                              "url": {
+                                "path": "/Mixed-Use-Districts/Waterside-District"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Waterside District"
+                              },
+                              "LongTitle": {
+                                "value": "Waterside District"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "239A9083CE1C464C8421BF164AFC3D24",
+                        "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters",
+                        "name": "ShoppingCenters",
+                        "displayName": "ShoppingCenters",
+                        "url": {
+                          "path": "/ShoppingCenters"
+                        },
+                        "IncludeInMainNavigation": {
+                          "value": "1"
+                        },
+                        "IncludeInLeftNavigation": null,
+                        "ShortTitle": {
+                          "value": "Shopping Centers"
+                        },
+                        "LongTitle": {
+                          "value": "Shopping Centers"
+                        },
+                        "children": {
+                          "results": [
+                            {
+                              "id": "B1B0AD4897284CEDA86EBA2215098BAD",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Big Elk",
+                              "name": "Big Elk",
+                              "displayName": "Big Elk",
+                              "url": {
+                                "path": "/ShoppingCenters/Big-Elk"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Big Elk"
+                              },
+                              "LongTitle": {
+                                "value": "Big Elk"
+                              }
+                            },
+                            {
+                              "id": "6A389AC2E1664C6D9C7F0C4711057C98",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Carroll Island",
+                              "name": "Carroll Island",
+                              "displayName": "Carroll Island",
+                              "url": {
+                                "path": "/ShoppingCenters/Carroll-Island"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Carroll Island"
+                              },
+                              "LongTitle": {
+                                "value": "Carroll Island Shopping Center"
+                              }
+                            },
+                            {
+                              "id": "331B53C13C4A48B7BDBC4756B7724BEC",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Power Plant at Hampton Roads",
+                              "name": "Power Plant at Hampton Roads",
+                              "displayName": "Power Plant at Hampton Roads",
+                              "url": {
+                                "path": "/ShoppingCenters/Power-Plant-at-Hampton-Roads"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Power Plant at Hampton Roads"
+                              },
+                              "LongTitle": {
+                                "value": "Power Plant at Hampton Roads"
+                              }
+                            },
+                            {
+                              "id": "C403D9E0E6A5432286723717210053CE",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Edgewater Village",
+                              "name": "Edgewater Village",
+                              "displayName": "Edgewater Village",
+                              "url": {
+                                "path": "/ShoppingCenters/Edgewater-Village"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Edgewater Village"
+                              },
+                              "LongTitle": {
+                                "value": "Edgewater Village"
+                              }
+                            },
+                            {
+                              "id": "772854525B614531AFC672DA3CDEB5F6",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Havre De Grace Plaza",
+                              "name": "Havre De Grace Plaza",
+                              "displayName": "Havre De Grace Plaza",
+                              "url": {
+                                "path": "/ShoppingCenters/Havre-De-Grace-Plaza"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Havre De Grace Plaza"
+                              },
+                              "LongTitle": {
+                                "value": "Havre De Grace Plaza"
+                              }
+                            },
+                            {
+                              "id": "437174C77EBF46CB899FE58D8BB8A09F",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Joppatowne Plaza",
+                              "name": "Joppatowne Plaza",
+                              "displayName": "Joppatowne Plaza",
+                              "url": {
+                                "path": "/ShoppingCenters/Joppatowne-Plaza"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Joppatowne Plaza"
+                              },
+                              "LongTitle": {
+                                "value": "Joppatowne Plaza"
+                              }
+                            },
+                            {
+                              "id": "DD94AEB684FD427087990DA45AC748B4",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Kent Landing",
+                              "name": "Kent Landing",
+                              "displayName": "Kent Landing",
+                              "url": {
+                                "path": "/ShoppingCenters/Kent-Landing"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Kent Landing"
+                              },
+                              "LongTitle": {
+                                "value": "Kent Landing"
+                              }
+                            },
+                            {
+                              "id": "8BC3EEEDBEDA49FE83CCBBD1EDAB9B2C",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Kent Plaza",
+                              "name": "Kent Plaza",
+                              "displayName": "Kent Plaza",
+                              "url": {
+                                "path": "/ShoppingCenters/Kent-Plaza"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Kent Plaza"
+                              },
+                              "LongTitle": {
+                                "value": "Kent Plaza"
+                              }
+                            },
+                            {
+                              "id": "6A7B117E02EE493F8EFCEB4F22957D6E",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Milford Landing",
+                              "name": "Milford Landing",
+                              "displayName": "Milford Landing",
+                              "url": {
+                                "path": "/ShoppingCenters/Milford-Landing"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Milford Landing"
+                              },
+                              "LongTitle": {
+                                "value": "Milford Landing"
+                              }
+                            },
+                            {
+                              "id": "AB6CAEC24E6D464F955E2D09F57A5550",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/North Carroll Plaza",
+                              "name": "North Carroll Plaza",
+                              "displayName": "North Carroll Plaza",
+                              "url": {
+                                "path": "/ShoppingCenters/North-Carroll-Plaza"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "North Carroll Plaza"
+                              },
+                              "LongTitle": {
+                                "value": "North Carroll Plaza"
+                              }
+                            },
+                            {
+                              "id": "CE70E75085A948C4AB7D34DB98D8EF79",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Northeast Plaza",
+                              "name": "Northeast Plaza",
+                              "displayName": "Northeast Plaza",
+                              "url": {
+                                "path": "/ShoppingCenters/Northeast-Plaza"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Northeast Plaza"
+                              },
+                              "LongTitle": {
+                                "value": "Northeast Plaza"
+                              }
+                            },
+                            {
+                              "id": "402190C15AD540C99D611AEFF4E2CEC5",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/ShoppingCenters/Ocean Landing",
+                              "name": "Ocean Landing",
+                              "displayName": "Ocean Landing",
+                              "url": {
+                                "path": "/ShoppingCenters/Ocean-Landing"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Ocean Landing"
+                              },
+                              "LongTitle": {
+                                "value": "Ocean Landing"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "7547434E93AF417DBACDC29D54C7A080",
+                        "path": "/sitecore/content/Corporate/Leasing/Home/Contact Us",
+                        "name": "Contact Us",
+                        "displayName": "Contact Us",
+                        "url": {
+                          "path": "/Contact-Us"
+                        },
+                        "IncludeInMainNavigation": {
+                          "value": "1"
+                        },
+                        "IncludeInLeftNavigation": null,
+                        "ShortTitle": {
+                          "value": "Contact Us"
+                        },
+                        "LongTitle": {
+                          "value": "Contact Us"
+                        },
+                        "children": {
+                          "results": [
+                            {
+                              "id": "3B682731568C42B2A64EB53A40A4A4E3",
+                              "path": "/sitecore/content/Corporate/Leasing/Home/Contact Us/Success",
+                              "name": "Success",
+                              "displayName": "Success",
+                              "url": {
+                                "path": "/Contact-Us/Success"
+                              },
+                              "IncludeInMainNavigation": {
+                                "value": ""
+                              },
+                              "IncludeInLeftNavigation": null,
+                              "ShortTitle": {
+                                "value": "Thank You"
+                              },
+                              "LongTitle": {
+                                "value": "Thank You"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "B12CC434EFCC419D9D3662E83F321964",
+                        "path": "/sitecore/content/Corporate/Leasing/Home/Cordish Link",
+                        "name": "Cordish Link",
+                        "displayName": "Cordish.com",
+                        "url": {
+                          "path": "/Cordish-Link"
+                        },
+                        "IncludeInMainNavigation": {
+                          "value": "1"
+                        },
+                        "IncludeInLeftNavigation": null,
+                        "ShortTitle": null,
+                        "LongTitle": null,
+                        "children": {
+                          "results": []
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "customJavascript": {
+                "item": {
+                  "name": "Global Custom Head JavaScript",
+                  "value": {
+                    "value": "<!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFBZ6SB');</script> <!-- End Google Tag Manager --> <meta name=\"google-site-verification\" content=\"RGDV4DU0srDK0hxvRuiUdRsU521Ejlm8F8Aue7rfpWg\" />"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "__N_SSG": true
+    },
+    "page": "/[[...path]]",
+    "query": {
+      "path": [
+        "_site_leasing"
+      ]
+    },
+    "buildId": "za6BxV3Sp2EW4BMCDUrb5",
+    "assetPrefix": "https://cordish-prod.netlify.app",
+    "isFallback": false,
+    "isExperimentalCompile": false,
+    "gsp": true,
+    "locale": "en",
+    "locales": [
+      "en",
+      "es",
+      "ko",
+      "vi",
+      "zh"
+    ],
+    "defaultLocale": "en",
+    "scriptLoader": []
+  }

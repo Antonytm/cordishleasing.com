@@ -1,0 +1,96 @@
+---
+import { SitecoreContextMap } from "@astro-sitecore-jss/astro-sitecore-jss";
+import type { ComponentRendering } from "@sitecore-jss/sitecore-jss/layout";
+
+export interface Props {
+  route?: any;
+  rendering?: ComponentRendering;
+  item?: any;
+}
+
+const { route: routeProp, rendering } = Astro.props;
+const actualRendering = routeProp?.rendering || rendering;
+
+// Get componentProps from the context map
+const contextMap = SitecoreContextMap.get();
+const allComponentProps = contextMap['componentProps'] || {};
+
+// Get this component's props by uid
+const componentProps = actualRendering?.uid ? allComponentProps[actualRendering.uid] || {} : {};
+const footerItem = componentProps?.item || {};
+
+// Get footer data
+const utilityLinks = footerItem?.children?.utilityLinks || [];
+const contactInfo = footerItem?.children?.contactInfo || [];
+const socialMediaLinks = footerItem?.children?.socialMediaLinks || [];
+---
+
+<footer class="footer">
+  <div class="wrap">
+    <section class="footer-int">
+      <div class="cell copyright">
+        Copyright © {new Date().getFullYear()} The Cordish Companies.
+        {utilityLinks.length > 0 && (
+          <ul>
+            {utilityLinks.map((link: any) => (
+              <li>
+                <a href={link.field?.url || link.field?.targetItem?.url?.path || '#'}>
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      {contactInfo.length >= 2 && (
+        <div class="cell address">
+          <a target="_blank" href={`https://www.google.com/maps/place/${encodeURIComponent(contactInfo[0].field?.value + ', ' + contactInfo[1].field?.value)}`}>
+            {contactInfo[0].field?.value}<br/>{contactInfo[1].field?.value}
+          </a>
+        </div>
+      )}
+
+      {contactInfo.length >= 5 && (
+        <div class="cell phone">
+          <a href={`tel:${contactInfo[3].field?.value}`} aria-label="Contact us by phone">
+            {contactInfo[3].field?.value}
+          </a><br/>
+          <span>Toll Free:</span>
+          <a href={`tel:${contactInfo[4].field?.value}`} aria-label="Contact us by toll free phone">
+            {contactInfo[4].field?.value}
+          </a>
+        </div>
+      )}
+
+      {socialMediaLinks.length > 0 && (
+        <div class="cell social">
+          <ul>
+            {socialMediaLinks.map((social: any) => {
+              const url = social.field?.url;
+              const name = social.name?.toLowerCase();
+              let iconClass = 'fa';
+
+              if (name?.includes('linkedin')) iconClass += ' fa-linkedin';
+              else if (name?.includes('twitter') || name?.includes('x-twitter')) iconClass += ' fa-x-twitter';
+              else if (name?.includes('facebook')) iconClass += ' fa-facebook';
+              else if (name?.includes('youtube')) iconClass += ' fa-youtube';
+              else if (name?.includes('instagram')) iconClass += ' fa-instagram';
+              else if (name?.includes('google')) iconClass += ' fa-google-plus';
+
+              iconClass += ' fa-fw';
+
+              return url ? (
+                <li>
+                  <a href={url} target="_blank">
+                    <i class={iconClass} aria-hidden="true"></i>
+                  </a>
+                </li>
+              ) : null;
+            })}
+          </ul>
+        </div>
+      )}
+    </section>
+  </div>
+</footer>

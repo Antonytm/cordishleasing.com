@@ -1,0 +1,11 @@
+const config = {};
+config.sitecoreSiteName = import.meta.env.SITECORE_SITE_NAME || 'astro';
+config.sitecoreApiKey = import.meta.env.SITECORE_API_KEY || 'undefined';
+config.sitecoreApiHost = import.meta.env.SITECORE_API_HOST || 'undefined';
+config.graphQLEndpointPath = import.meta.env.GRAPH_QL_ENDPOINT_PATH || '/sitecore/api/graph/edge';
+config.graphQLEndpoint = import.meta.env.GRAPH_QL_ENDPOINT || 'undefined/sitecore/api/graph/edge';
+config.rootItemId = import.meta.env.ROOT_ITEM_ID || 'undefined';
+config.defaultLanguage = import.meta.env.DEFAULT_LANGUAGE || 'en';
+config.fetchWith = import.meta.env.FETCH_WITH || 'GraphQL';
+config.jssAppName = import.meta.env.JSS_APP_NAME || 'astro';
+export default config;

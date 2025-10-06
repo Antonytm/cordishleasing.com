@@ -1,0 +1,12 @@
+{
+  "sitecore": {
+    "jssAppName": "astro",
+    "sitecoreApiKey": "undefined",
+    "sitecoreApiHost": "undefined",
+    "rootItemId": "undefined",
+    "graphQLEndpoint": "",
+    "graphQLEndpointPath": "/sitecore/api/graph/edge",
+    "defaultLanguage": "en",
+    "fetchWith": "GraphQL"
+  }
+}

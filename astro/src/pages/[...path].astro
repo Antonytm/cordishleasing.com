@@ -1,0 +1,35 @@
+---
+import JssLayout from "../layouts/JssLayout.astro";
+import { SitemapService, StaticPath } from "../lib/sitemap-service";
+import { SitecorePagePropsFactory } from "../lib/page-props-factory";
+import { SitecoreContextMap } from "@astro-sitecore-jss/astro-sitecore-jss";
+import type { LayoutServiceContext, RouteData } from '@sitecore-jss/sitecore-jss/layout';
+import config from "../temp/config";
+import GraphQLRequestClientFactory from "../lib/graphql/graphql-request-client-factory";
+import nextData from "../../next-data.json";
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  return [{params: {path: "/"}}];
+}
+
+export type SitecoreContextValue = LayoutServiceContext & {
+    itemId?: string;
+    route?: RouteData;
+};
+
+
+const { path } = Astro.params;
+
+const pageProps = nextData.props.pageProps;
+let scContext = pageProps.layoutData.sitecore.context as SitecoreContextValue;
+scContext.route = pageProps.layoutData.sitecore.route;
+scContext.itemId = pageProps.layoutData.sitecore.route.itemId;
+
+SitecoreContextMap.setKey('scContext', scContext);
+SitecoreContextMap.setKey('dictionary', pageProps.dictionary);
+SitecoreContextMap.setKey('componentProps', pageProps.componentProps || {});
+
+---
+<JssLayout title="a" layoutData={pageProps.layoutData} />

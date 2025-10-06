@@ -1,0 +1,45 @@
+---
+import { SitecoreContextMap } from "@astro-sitecore-jss/astro-sitecore-jss";
+import type { ComponentRendering, ImageField, LinkField } from "@sitecore-jss/sitecore-jss/layout";
+
+export interface Props {
+  route?: any;
+  rendering?: ComponentRendering;
+}
+
+const { route: routeProp, rendering } = Astro.props;
+const contextMap = SitecoreContextMap.get();
+const scContext = contextMap['scContext'];
+const contextRoute = scContext?.route;
+
+// Get Brand Story CTA from route fields
+const brandStoryCTA = contextRoute?.fields?.["Brand Story CTA"] as any;
+
+const mainImage = brandStoryCTA?.fields?.["Main Image"]?.value as ImageField['value'];
+const shortTitle = brandStoryCTA?.fields?.["Short Title"]?.value;
+const longTitle = brandStoryCTA?.fields?.["Long Title"]?.value;
+const teaserCopy = brandStoryCTA?.fields?.["Teaser Copy"]?.value;
+const mainImageCaption = brandStoryCTA?.fields?.["Main Image Caption"]?.value;
+const linkText = brandStoryCTA?.fields?.["Link Text"]?.value;
+const link = brandStoryCTA?.fields?.["Link"]?.value as LinkField['value'];
+const video = brandStoryCTA?.fields?.["Video"]?.value;
+---
+
+<section class="callout" style={mainImage?.src ? `background-image:url(${mainImage.src})` : ''}>
+  <div class="fade">
+    <div class="wrap">
+      <div class="callout-content">
+        <h2>{longTitle || shortTitle}</h2>
+        {teaserCopy && <div set:html={teaserCopy} />}
+        {link?.href && linkText && (
+          <a class="btn" href={link.href}>{linkText}</a>
+        )}
+        {video && mainImageCaption && (
+          <a class="btn" href={`https://www.youtube.com/watch?v=${video}`}>
+            {mainImageCaption}
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
