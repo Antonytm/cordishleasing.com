@@ -1,0 +1,12 @@
+{
+  "name": "lighthouse-tests",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test:performance": "node lighthouse-performance.test.js"
+  },
+  "dependencies": {
+    "lighthouse": "^12.2.1",
+    "chrome-launcher": "^1.1.2"
+  }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "url": "https://cordishleasing.com/",
+    "device": "desktop",
+    "score": 28.000000000000004,
+    "metrics": {
+      "firstContentfulPaint": 2415.6295,
+      "speedIndex": 7257.343032655152,
+      "largestContentfulPaint": 26189.216,
+      "timeToInteractive": 30617.136474999996,
+      "totalBlockingTime": 1189.5,
+      "cumulativeLayoutShift": 0.002984517482415434
+    }
+  },
+  {
+    "url": "https://cordishleasing.com/",
+    "device": "mobile",
+    "score": 34,
+    "metrics": {
+      "firstContentfulPaint": 15641.0915,
+      "speedIndex": 15641.0915,
+      "largestContentfulPaint": 32948.51100000001,
+      "timeToInteractive": 33357.05125000001,
+      "totalBlockingTime": 911,
+      "cumulativeLayoutShift": 0
+    }
+  },
+  {
+    "url": "https://cordishleasing.netlify.app/",
+    "device": "desktop",
+    "score": 60,
+    "metrics": {
+      "firstContentfulPaint": 2326.1130000000003,
+      "speedIndex": 2875.746851823521,
+      "largestContentfulPaint": 15105.149999999994,
+      "timeToInteractive": 15105.149999999994,
+      "totalBlockingTime": 0,
+      "cumulativeLayoutShift": 0.011649406466158831
+    }
+  },
+  {
+    "url": "https://cordishleasing.netlify.app/",
+    "device": "mobile",
+    "score": 65,
+    "metrics": {
+      "firstContentfulPaint": 3681.4619999999995,
+      "speedIndex": 4765.911199898529,
+      "largestContentfulPaint": 16088.403500000002,
+      "timeToInteractive": 16258.533500000005,
+      "totalBlockingTime": 0,
+      "cumulativeLayoutShift": 0
+    }
+  }
+]
